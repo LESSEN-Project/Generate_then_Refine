@@ -16,7 +16,7 @@ You can download the dataset from the following link:
  
 https://github.com/google-research-datasets/dstc8-schema-guided-dialogue
 
-We use the source code belowe to process SGD dataset
+We use the source code below to process SGD dataset
 
 https://github.com/RIDE-SIGIR/GZS
 
