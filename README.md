@@ -25,7 +25,7 @@ It includes whole pipeline, start with generating the syhthetic utterances (01pr
 
 
 ### note:
-01-1get_SuperGen.py: When you choose to generate based on output confidence from 01prompting.py (i.e. --get_score yes). Then the output will be a json file, 01-1get_SuperGen.py is used to dervie the most confidece output and give you a csv file. 
+01-1get_SuperGen.py: When you choose to generate based on output confidence from 01prompting.py (i.e. --get_score yes). Then the output will be a json file, 01-1get_SuperGen.py will take the json file as input and then dervie the most confidece output as a csv file. 
 
 ## How to use
 For each script, there is a **domain_map_filepath** argument. This should be a dictionary where the keys are domains and the values are lists of intents, saved as a JSON file. For **Clinc150**, the json file is provided in the source, but for **SGD**, you have to create it yourself.
