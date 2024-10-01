@@ -602,14 +602,14 @@ def extract_number_from_path(path):
 
 parser = argparse.ArgumentParser(description='To train the refiner')
 parser.add_argument('--train_epo_num', default =  6 ,type=int, help='train_epo_num')
-parser.add_argument('--input_ut', default =  1 ,type=int, help='input num of uts')
+parser.add_argument('--input_ut', default =  7 ,type=int, help='input num of uts')
 parser.add_argument('--output_ut', default =  1 ,type=int, help='output num of uts')
 parser.add_argument('--grc_steps', default =  3 ,type=int, help='gradient accumulation steps')
-parser.add_argument('--model_name', default = 'google/flan-t5-large' ,type=str)
+parser.add_argument('--model_name', default = 'google/flan-t5-large' ,type=str, help='backbone of refiner model')
 parser.add_argument('--train_batch_size', default =  24 ,type=int)
-parser.add_argument('--llm_data_filepath', default = '../data/sgd/zphr_sgd_9sd.csv',type=str)
+parser.add_argument('--llm_data_filepath',type=str, help='The csv file from 01prompting LLM generation')
 parser.add_argument('--train_refiner', default = 'yes',type=str)
-parser.add_argument('--is_peft', default = 'yes',type=str)
+parser.add_argument('--is_peft', default = 'no',type=str, help='To use LORA or not')
 parser.add_argument('--lora_r', default =  16 ,type=int)
 parser.add_argument('--domain_map_filepath', type=str)
 

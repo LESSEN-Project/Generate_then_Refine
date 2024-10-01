@@ -270,8 +270,8 @@ def find_checkpoint(wd):
 
 
 parser = argparse.ArgumentParser(description='data refiner infer')
-parser.add_argument('--llm_data_filepath', default = '../data/clinc150/llama3_clinc150_1sd.csv')
-parser.add_argument('--model_wd', default = 'google/flan-t5-large')
+parser.add_argument('--llm_data_filepath', help='The csv file from 01prompting LLM generation')
+parser.add_argument('--model_wd', help='The refiner path')
 parser.add_argument('--domain_map_filepath', type=str)
 
 

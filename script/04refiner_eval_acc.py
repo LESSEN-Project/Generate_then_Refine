@@ -290,7 +290,7 @@ def extract_seed_number(filepath):
 
 
 parser = argparse.ArgumentParser(description='To evaluate the refined data')
-parser.add_argument('--llm_data_filepath', default = '../data/sgd/chatgpt_sgd_2sd.csv',type=str)
+parser.add_argument('--llm_data_filepath',type=str, help='The file you want to evaluate')
 parser.add_argument('--log_accuracy', default = 'yes',type=str)
 parser.add_argument('--mutiplier', default = 1,type=float)
 parser.add_argument('--domain_map_filepath', type=str)

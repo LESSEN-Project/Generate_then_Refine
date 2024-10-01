@@ -264,10 +264,10 @@ class GeneratedData:
 
 
 parser = argparse.ArgumentParser(description='Prompting LLM to get generated utterance')
-parser.add_argument('--seed_value', type=int,default = 42)
+parser.add_argument('--seed_value', type=int,default = 1)
 parser.add_argument('--dataset_name', type=str, default = 'clinc150')
-parser.add_argument('--model_name', type=str, default = 'Llama-3-8B')
-parser.add_argument('--get_score', type=str, default = 'yes')
+parser.add_argument('--model_name', type=str, default = 'Llama-3-8B', help ='Model used for gerenated utterances')
+parser.add_argument('--get_score', type=str, default = 'no', help ='to get the output confidece. It is used to reproduce SuperGen data selectoin')
 parser.add_argument('--domain_map_filepath', type=str)
 
 
